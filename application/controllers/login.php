@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Login extends CI_Controller {
-	public function _construct() {
+/*	public function _construct() {
 		session_start();
 	}
 
@@ -18,5 +18,9 @@ class Login extends CI_Controller {
 				header('location:'.base_url().'user');
 			}
 		}
+	}
+*/
+	public function index()	{
+		header('location:'.base_url().'admin');
 	}
 }
